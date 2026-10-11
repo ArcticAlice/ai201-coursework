@@ -1,0 +1,535 @@
+Using pip 26.2.1 from /Users/jawadbhullar/Documents/codepath/ai201/ai201-coursework/.venv/lib/python3.13/site-packages/pip (python 3.13)
+Collecting python-dotenv<1.2,>=1.0 (from -r requirements.txt (line 8))
+  Obtaining dependency information for python-dotenv<1.2,>=1.0 from https://files.pythonhosted.org/packages/5f/ed/539768cf28c661b5b068d66d96a2f155c4971a5d55684a514c1a0e0dec2f/python_dotenv-1.1.1-py3-none-any.whl.metadata
+  Using cached python_dotenv-1.1.1-py3-none-any.whl.metadata (24 kB)
+Collecting chromadb<0.7,>=0.6 (from -r requirements.txt (line 25))
+  Obtaining dependency information for chromadb<0.7,>=0.6 from https://files.pythonhosted.org/packages/28/8e/5c186c77bf749b6fe0528385e507e463f1667543328d76fd00a49e1a4e6a/chromadb-0.6.3-py3-none-any.whl.metadata
+  Using cached chromadb-0.6.3-py3-none-any.whl.metadata (6.8 kB)
+Collecting posthog<4.0,>=3.0 (from -r requirements.txt (line 34))
+  Obtaining dependency information for posthog<4.0,>=3.0 from https://files.pythonhosted.org/packages/54/e2/c158366e621562ef224f132e75c1d1c1fce6b078a19f7d8060451a12d4b9/posthog-3.25.0-py2.py3-none-any.whl.metadata
+  Using cached posthog-3.25.0-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting google-genai<2.0,>=1.0 (from -r requirements.txt (line 38))
+  Obtaining dependency information for google-genai<2.0,>=1.0 from https://files.pythonhosted.org/packages/2d/b6/552d40e96da22921eb1fead7c14b00b5b5473a20e45959488660fab35ee2/google_genai-1.75.0-py3-none-any.whl.metadata
+  Using cached google_genai-1.75.0-py3-none-any.whl.metadata (52 kB)
+Collecting rank-bm25<0.3,>=0.2.2 (from -r requirements.txt (line 42))
+  Obtaining dependency information for rank-bm25<0.3,>=0.2.2 from https://files.pythonhosted.org/packages/2a/21/f691fb2613100a62b3fa91e9988c991e9ca5b89ea31c0d3152a3210344f9/rank_bm25-0.2.2-py3-none-any.whl.metadata
+  Using cached rank_bm25-0.2.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting flask<3.2,>=3.0 (from -r requirements.txt (line 46))
+  Obtaining dependency information for flask<3.2,>=3.0 from https://files.pythonhosted.org/packages/7f/9c/34f6962f9b9e9c71f6e5ed806e0d0ff03c9d1b0b2340088a0cf4bce09b18/flask-3.1.3-py3-none-any.whl.metadata
+  Using cached flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
+Collecting gunicorn<24.0,>=23.0 (from -r requirements.txt (line 51))
+  Obtaining dependency information for gunicorn<24.0,>=23.0 from https://files.pythonhosted.org/packages/cb/7d/6dac2a6e1eba33ee43f318edbed4ff29151a49b5d37f080aad1e6469bca4/gunicorn-23.0.0-py3-none-any.whl.metadata
+  Using cached gunicorn-23.0.0-py3-none-any.whl.metadata (4.4 kB)
+Collecting build>=1.0.3 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for build>=1.0.3 from https://files.pythonhosted.org/packages/ad/9b/9fb3585dabcd73a1b2a6267f63f62649347c9e6d072c9fde365b105abb2c/build-1.6.1-py3-none-any.whl.metadata
+  Using cached build-1.6.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting pydantic>=1.9 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for pydantic>=1.9 from https://files.pythonhosted.org/packages/2d/eb/9146591cc819d040475bf7f2be786710c7f7eb8083693bf859728da2ca9c/pydantic-2.14.0-py3-none-any.whl.metadata
+  Using cached pydantic-2.14.0-py3-none-any.whl.metadata (131 kB)
+Collecting chroma-hnswlib==0.7.6 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Using cached chroma_hnswlib-0.7.6.tar.gz (32 kB)
+  Installing build dependencies: started
+  Running command installing build dependencies for chroma-hnswlib
+  Using pip 26.2.1 from /Users/jawadbhullar/Documents/codepath/ai201/ai201-coursework/.venv/lib/python3.13/site-packages/pip (python 3.13)
+  Collecting setuptools>=42
+    Obtaining dependency information for setuptools>=42 from https://files.pythonhosted.org/packages/95/9c/c510029fc6ef33a6275cd2c5d3cecd6613dfd6aa401d57c54f1c18852ccf/setuptools-84.0.0-py3-none-any.whl.metadata
+    Using cached setuptools-84.0.0-py3-none-any.whl.metadata (6.6 kB)
+  Collecting wheel
+    Obtaining dependency information for wheel from https://files.pythonhosted.org/packages/2e/29/69cfbb602cd91690c55d38ba9fe53e6a7e76a6fa647bf38f19c138d25449/wheel-0.48.0-py3-none-any.whl.metadata
+    Using cached wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+    Link requires a different Python (3.13.16 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/3a/be/650f9c091ef71cb01d735775d554e068752d3ff63d7943b26316dc401749/numpy-1.21.2.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+    Link requires a different Python (3.13.16 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/5f/d6/ad58ded26556eaeaa8c971e08b6466f17c4ac4d786cd3d800e26ce59cc01/numpy-1.21.3.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+    Link requires a different Python (3.13.16 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/fb/48/b0708ebd7718a8933f0d3937513ef8ef2f4f04529f1f66ca86d873043921/numpy-1.21.4.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+    Link requires a different Python (3.13.16 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/c2/a8/a924a09492bdfee8c2ec3094d0a13f2799800b4fdc9c890738aeeb12c72e/numpy-1.21.5.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+    Link requires a different Python (3.13.16 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/45/b7/de7b8e67f2232c26af57c205aaad29fe17754f793404f59c8a730c7a191a/numpy-1.21.6.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+    Link requires a different Python (3.13.16 not in: '<3.13,>=3.9'): https://files.pythonhosted.org/packages/55/b3/b13bce39ba82b7398c06d10446f5ffd5c07db39b09bd37370dc720c7951c/numpy-1.26.0.tar.gz (from https://pypi.org/simple/numpy/) (requires-python:<3.13,>=3.9)
+    Link requires a different Python (3.13.16 not in: '<3.13,>=3.9'): https://files.pythonhosted.org/packages/78/23/f78fd8311e0f710fe1d065d50b92ce0057fe877b8ed7fd41b28ad6865bfc/numpy-1.26.1.tar.gz (from https://pypi.org/simple/numpy/) (requires-python:<3.13,>=3.9)
+  Collecting numpy>=1.10.0
+    Obtaining dependency information for numpy>=1.10.0 from https://files.pythonhosted.org/packages/ab/2a/98282aa5b8f58b1157d440bb6282eed47e3632a5de53a714fbab17e659fe/numpy-2.5.3-cp313-cp313-macosx_14_0_arm64.whl.metadata
+    Using cached numpy-2.5.3-cp313-cp313-macosx_14_0_arm64.whl.metadata (6.6 kB)
+  Collecting pybind11>=2.0
+    Obtaining dependency information for pybind11>=2.0 from https://files.pythonhosted.org/packages/33/fd/8762f7ee3e4e4be6d1d846cffb4916dd9bb02b2f800d3603718a0efe494c/pybind11-3.1.0-py3-none-any.whl.metadata
+    Using cached pybind11-3.1.0-py3-none-any.whl.metadata (10 kB)
+  Collecting packaging>=24.0 (from wheel)
+    Obtaining dependency information for packaging>=24.0 from https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl.metadata
+    Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+  Using cached setuptools-84.0.0-py3-none-any.whl (818 kB)
+  Using cached wheel-0.48.0-py3-none-any.whl (33 kB)
+  Using cached numpy-2.5.3-cp313-cp313-macosx_14_0_arm64.whl (5.4 MB)
+  Using cached pybind11-3.1.0-py3-none-any.whl (319 kB)
+  Using cached packaging-26.3-py3-none-any.whl (129 kB)
+  Installing collected packages: setuptools, pybind11, packaging, numpy, wheel
+    Creating /private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-build-env-zh18ddr2/overlay/bin
+    changing mode of /private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-build-env-zh18ddr2/overlay/bin/pybind11-config to 755
+    changing mode of /private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-build-env-zh18ddr2/overlay/bin/f2py to 755
+    changing mode of /private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-build-env-zh18ddr2/overlay/bin/numpy-config to 755
+    changing mode of /private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-build-env-zh18ddr2/overlay/bin/wheel to 755
+
+  Successfully installed numpy-2.5.3 packaging-26.3 pybind11-3.1.0 setuptools-84.0.0 wheel-0.48.0
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Running command Getting requirements to build wheel
+  running egg_info
+  writing chroma_hnswlib.egg-info/PKG-INFO
+  writing dependency_links to chroma_hnswlib.egg-info/dependency_links.txt
+  writing requirements to chroma_hnswlib.egg-info/requires.txt
+  writing top-level names to chroma_hnswlib.egg-info/top_level.txt
+  reading manifest file 'chroma_hnswlib.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  adding license file 'LICENSE'
+  writing manifest file 'chroma_hnswlib.egg-info/SOURCES.txt'
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Running command Preparing metadata (pyproject.toml)
+  running dist_info
+  creating /private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-modern-metadata-8us7up6j/chroma_hnswlib.egg-info
+  writing /private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-modern-metadata-8us7up6j/chroma_hnswlib.egg-info/PKG-INFO
+  writing dependency_links to /private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-modern-metadata-8us7up6j/chroma_hnswlib.egg-info/dependency_links.txt
+  writing requirements to /private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-modern-metadata-8us7up6j/chroma_hnswlib.egg-info/requires.txt
+  writing top-level names to /private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-modern-metadata-8us7up6j/chroma_hnswlib.egg-info/top_level.txt
+  writing manifest file '/private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-modern-metadata-8us7up6j/chroma_hnswlib.egg-info/SOURCES.txt'
+  reading manifest file '/private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-modern-metadata-8us7up6j/chroma_hnswlib.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  adding license file 'LICENSE'
+  writing manifest file '/private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-modern-metadata-8us7up6j/chroma_hnswlib.egg-info/SOURCES.txt'
+  creating '/private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-modern-metadata-8us7up6j/chroma_hnswlib-0.7.6.dist-info'
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting fastapi>=0.95.2 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for fastapi>=0.95.2 from https://files.pythonhosted.org/packages/bd/f4/27e386913417ad32aae42bba48b0c0cce40e9ff2fba1a871ca2702c37324/fastapi-0.143.0-py3-none-any.whl.metadata
+  Using cached fastapi-0.143.0-py3-none-any.whl.metadata (26 kB)
+Collecting uvicorn>=0.18.3 (from uvicorn[standard]>=0.18.3->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for uvicorn>=0.18.3 from https://files.pythonhosted.org/packages/38/0c/b54a4fdd7f90a3af8b02ebc9ce6712c2c208b7926a2f7bad95c33ebbe943/uvicorn-0.54.0-py3-none-any.whl.metadata
+  Using cached uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+  Link requires a different Python (3.13.16 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/3a/be/650f9c091ef71cb01d735775d554e068752d3ff63d7943b26316dc401749/numpy-1.21.2.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.13.16 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/5f/d6/ad58ded26556eaeaa8c971e08b6466f17c4ac4d786cd3d800e26ce59cc01/numpy-1.21.3.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.13.16 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/fb/48/b0708ebd7718a8933f0d3937513ef8ef2f4f04529f1f66ca86d873043921/numpy-1.21.4.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.13.16 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/c2/a8/a924a09492bdfee8c2ec3094d0a13f2799800b4fdc9c890738aeeb12c72e/numpy-1.21.5.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.13.16 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/45/b7/de7b8e67f2232c26af57c205aaad29fe17754f793404f59c8a730c7a191a/numpy-1.21.6.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.13.16 not in: '<3.13,>=3.9'): https://files.pythonhosted.org/packages/55/b3/b13bce39ba82b7398c06d10446f5ffd5c07db39b09bd37370dc720c7951c/numpy-1.26.0.tar.gz (from https://pypi.org/simple/numpy/) (requires-python:<3.13,>=3.9)
+  Link requires a different Python (3.13.16 not in: '<3.13,>=3.9'): https://files.pythonhosted.org/packages/78/23/f78fd8311e0f710fe1d065d50b92ce0057fe877b8ed7fd41b28ad6865bfc/numpy-1.26.1.tar.gz (from https://pypi.org/simple/numpy/) (requires-python:<3.13,>=3.9)
+Collecting numpy>=1.22.5 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for numpy>=1.22.5 from https://files.pythonhosted.org/packages/ab/2a/98282aa5b8f58b1157d440bb6282eed47e3632a5de53a714fbab17e659fe/numpy-2.5.3-cp313-cp313-macosx_14_0_arm64.whl.metadata
+  Using cached numpy-2.5.3-cp313-cp313-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Collecting typing_extensions>=4.5.0 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for typing_extensions>=4.5.0 from https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl.metadata
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting onnxruntime>=1.14.1 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for onnxruntime>=1.14.1 from https://files.pythonhosted.org/packages/e0/2b/117f94d73a3bac4276c285c47e384e1b3ea67b191aa4c7592df9d3f4a136/onnxruntime-1.31.0-cp313-cp313-macosx_14_0_arm64.whl.metadata
+  Using cached onnxruntime-1.31.0-cp313-cp313-macosx_14_0_arm64.whl.metadata (5.7 kB)
+Collecting opentelemetry-api>=1.2.0 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for opentelemetry-api>=1.2.0 from https://files.pythonhosted.org/packages/1e/41/f7dcf80b81ee8e71c1a2b59f14208bc723edbd89ed027a73b175abf6348e/opentelemetry_api-1.45.1-py3-none-any.whl.metadata
+  Using cached opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+Collecting opentelemetry-exporter-otlp-proto-grpc>=1.2.0 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for opentelemetry-exporter-otlp-proto-grpc>=1.2.0 from https://files.pythonhosted.org/packages/4d/46/2d1da202f1e17c81aae7efcf702898d524b46709e4d3e2bf1f7f8ca8fbc6/opentelemetry_exporter_otlp_proto_grpc-1.45.1-py3-none-any.whl.metadata
+  Using cached opentelemetry_exporter_otlp_proto_grpc-1.45.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting opentelemetry-instrumentation-fastapi>=0.41b0 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for opentelemetry-instrumentation-fastapi>=0.41b0 from https://files.pythonhosted.org/packages/75/70/676928d537978acc7bff2ac8657bd0836ba608ffc8f65455238f1fa2bd0f/opentelemetry_instrumentation_fastapi-0.66b1-py3-none-any.whl.metadata
+  Using cached opentelemetry_instrumentation_fastapi-0.66b1-py3-none-any.whl.metadata (2.2 kB)
+Collecting opentelemetry-sdk>=1.2.0 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for opentelemetry-sdk>=1.2.0 from https://files.pythonhosted.org/packages/95/3c/87c42b4bd6dd297536f04cd9383d212ac557ecd49f2cbdcd46da1c9ef5c8/opentelemetry_sdk-1.45.1-py3-none-any.whl.metadata
+  Using cached opentelemetry_sdk-1.45.1-py3-none-any.whl.metadata (1.6 kB)
+Collecting tokenizers>=0.13.2 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for tokenizers>=0.13.2 from https://files.pythonhosted.org/packages/b2/72/01e49f032bb346e5aaf06c10c74fe8aeec847173adbadd66eb7c53054bf2/tokenizers-0.23.3-cp310-abi3-macosx_11_0_arm64.whl.metadata
+  Using cached tokenizers-0.23.3-cp310-abi3-macosx_11_0_arm64.whl.metadata (9.8 kB)
+Collecting pypika>=0.48.9 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for pypika>=0.48.9 from https://files.pythonhosted.org/packages/57/83/c77dfeed04022e8930b08eedca2b6e5efed256ab3321396fde90066efb65/pypika-0.51.1-py2.py3-none-any.whl.metadata
+  Using cached pypika-0.51.1-py2.py3-none-any.whl.metadata (51 kB)
+Collecting tqdm>=4.65.0 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for tqdm>=4.65.0 from https://files.pythonhosted.org/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl.metadata
+  Using cached tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting overrides>=7.3.1 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for overrides>=7.3.1 from https://files.pythonhosted.org/packages/2c/ab/fc8290c6a4c722e5514d80f62b2dc4c4df1a68a41d1364e625c35990fcf3/overrides-7.7.0-py3-none-any.whl.metadata
+  Using cached overrides-7.7.0-py3-none-any.whl.metadata (5.8 kB)
+Collecting importlib-resources (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for importlib-resources from https://files.pythonhosted.org/packages/8a/db/55a262f3606bebcae07cc14095338471ad7c0bbcaa37707e6f0ee49725b7/importlib_resources-7.1.0-py3-none-any.whl.metadata
+  Using cached importlib_resources-7.1.0-py3-none-any.whl.metadata (4.0 kB)
+Collecting grpcio>=1.58.0 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for grpcio>=1.58.0 from https://files.pythonhosted.org/packages/c5/4b/ed8e22a1237e6b2be6ef4f221d074a5b0e0dd8a0da8c944c04aea731f0eb/grpcio-1.84.0-cp313-cp313-macosx_11_0_universal2.whl.metadata
+  Using cached grpcio-1.84.0-cp313-cp313-macosx_11_0_universal2.whl.metadata (3.8 kB)
+Collecting bcrypt>=4.0.1 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for bcrypt>=4.0.1 from https://files.pythonhosted.org/packages/5d/ba/2af136406e1c3839aea9ecadc2f6be2bcd1eff255bd451dd39bcf302c47a/bcrypt-5.0.0-cp39-abi3-macosx_10_12_universal2.whl.metadata
+  Using cached bcrypt-5.0.0-cp39-abi3-macosx_10_12_universal2.whl.metadata (10 kB)
+Collecting typer>=0.9.0 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for typer>=0.9.0 from https://files.pythonhosted.org/packages/07/ea/2e31b67051e91a133189e9c000c222502ddc6969856416de0d095de4c0b0/typer-0.27.3-py3-none-any.whl.metadata
+  Using cached typer-0.27.3-py3-none-any.whl.metadata (16 kB)
+Collecting kubernetes>=28.1.0 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for kubernetes>=28.1.0 from https://files.pythonhosted.org/packages/8a/de/ac1904ac7fb651426e5698f56a268669a1ca3d63378629bacbf057b25e75/kubernetes-37.0.1-py2.py3-none-any.whl.metadata
+  Using cached kubernetes-37.0.1-py2.py3-none-any.whl.metadata (1.9 kB)
+Collecting tenacity>=8.2.3 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for tenacity>=8.2.3 from https://files.pythonhosted.org/packages/d6/26/1ff2b0721ac66a3ec5b1402b333110b352ab0a8724052ac279a7b82d40c4/tenacity-9.2.1-py3-none-any.whl.metadata
+  Using cached tenacity-9.2.1-py3-none-any.whl.metadata (1.4 kB)
+Collecting PyYAML>=6.0.0 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for PyYAML>=6.0.0 from https://files.pythonhosted.org/packages/b1/16/95309993f1d3748cd644e02e38b75d50cbc0d9561d21f390a76242ce073f/pyyaml-6.0.3-cp313-cp313-macosx_11_0_arm64.whl.metadata
+  Using cached pyyaml-6.0.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Collecting mmh3>=4.0.1 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for mmh3>=4.0.1 from https://files.pythonhosted.org/packages/5a/0a/67d5082ad1fe184c4c928ca6be61d775947590863d52de0a9d9aa7d525b2/mmh3-5.3.1-cp313-cp313-macosx_11_0_arm64.whl.metadata
+  Using cached mmh3-5.3.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (13 kB)
+Collecting orjson>=3.9.12 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for orjson>=3.9.12 from https://files.pythonhosted.org/packages/1f/19/725d23160b2471a3f27026c55bb79af34687652d8be8f5f583cee5dcd42f/orjson-3.13.0-cp313-cp313-macosx_15_0_arm64.whl.metadata
+  Using cached orjson-3.13.0-cp313-cp313-macosx_15_0_arm64.whl.metadata (42 kB)
+Collecting httpx>=0.27.0 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for httpx>=0.27.0 from https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl.metadata
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting rich>=10.11.0 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for rich>=10.11.0 from https://files.pythonhosted.org/packages/82/3b/64d4899d73f91ba49a8c18a8ff3f0ea8f1c1d75481760df8c68ef5235bf5/rich-15.0.0-py3-none-any.whl.metadata
+  Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting requests<3.0,>=2.7 (from posthog<4.0,>=3.0->-r requirements.txt (line 34))
+  Obtaining dependency information for requests<3.0,>=2.7 from https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl.metadata
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting six>=1.5 (from posthog<4.0,>=3.0->-r requirements.txt (line 34))
+  Obtaining dependency information for six>=1.5 from https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl.metadata
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting monotonic>=1.5 (from posthog<4.0,>=3.0->-r requirements.txt (line 34))
+  Obtaining dependency information for monotonic>=1.5 from https://files.pythonhosted.org/packages/9a/67/7e8406a29b6c45be7af7740456f7f37025f0506ae2e05fb9009a53946860/monotonic-1.6-py2.py3-none-any.whl.metadata
+  Using cached monotonic-1.6-py2.py3-none-any.whl.metadata (1.5 kB)
+Collecting backoff>=1.10.0 (from posthog<4.0,>=3.0->-r requirements.txt (line 34))
+  Obtaining dependency information for backoff>=1.10.0 from https://files.pythonhosted.org/packages/df/73/b6e24bd22e6720ca8ee9a85a0c4a2971af8497d8f3193fa05390cbd46e09/backoff-2.2.1-py3-none-any.whl.metadata
+  Using cached backoff-2.2.1-py3-none-any.whl.metadata (14 kB)
+Collecting python-dateutil>2.1 (from posthog<4.0,>=3.0->-r requirements.txt (line 34))
+  Obtaining dependency information for python-dateutil>2.1 from https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting distro>=1.5.0 (from posthog<4.0,>=3.0->-r requirements.txt (line 34))
+  Obtaining dependency information for distro>=1.5.0 from https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl.metadata
+  Using cached distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting anyio<5.0.0,>=4.8.0 (from google-genai<2.0,>=1.0->-r requirements.txt (line 38))
+  Obtaining dependency information for anyio<5.0.0,>=4.8.0 from https://files.pythonhosted.org/packages/12/b8/4bd346e22b28902df4d651910f5242c28d84e4a5c2435ca5c3f797ed7e2e/anyio-4.15.1-py3-none-any.whl.metadata
+  Using cached anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting google-auth<3.0.0,>=2.48.1 (from google-auth[requests]<3.0.0,>=2.48.1->google-genai<2.0,>=1.0->-r requirements.txt (line 38))
+  Obtaining dependency information for google-auth<3.0.0,>=2.48.1 from https://files.pythonhosted.org/packages/1e/68/c2ff6043d93fda69e5c12a834d0be3b3fa6c762e89732160532566be621b/google_auth-2.61.0-py3-none-any.whl.metadata
+  Using cached google_auth-2.61.0-py3-none-any.whl.metadata (6.0 kB)
+Collecting tenacity>=8.2.3 (from chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for tenacity>=8.2.3 from https://files.pythonhosted.org/packages/d7/c1/eb8f9debc45d3b7918a32ab756658a0904732f75e555402972246b0b8e71/tenacity-9.1.4-py3-none-any.whl.metadata
+  Using cached tenacity-9.1.4-py3-none-any.whl.metadata (1.2 kB)
+Collecting websockets<17.0,>=13.0.0 (from google-genai<2.0,>=1.0->-r requirements.txt (line 38))
+  Obtaining dependency information for websockets<17.0,>=13.0.0 from https://files.pythonhosted.org/packages/3d/86/0a70d3ae2f0f2256bb41302d9804dbca65d4360281e7feb3e1f94102ac46/websockets-16.1.1-cp313-cp313-macosx_11_0_arm64.whl.metadata
+  Using cached websockets-16.1.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (6.8 kB)
+Collecting sniffio (from google-genai<2.0,>=1.0->-r requirements.txt (line 38))
+  Obtaining dependency information for sniffio from https://files.pythonhosted.org/packages/e9/44/75a9c9421471a6c4805dbf2356f7c181a29c1879239abab1ea2cc8f38b40/sniffio-1.3.1-py3-none-any.whl.metadata
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting blinker>=1.9.0 (from flask<3.2,>=3.0->-r requirements.txt (line 46))
+  Obtaining dependency information for blinker>=1.9.0 from https://files.pythonhosted.org/packages/10/cb/f2ad4230dc2eb1a74edf38f1a38b9b52277f75bef262d8908e60d957e13c/blinker-1.9.0-py3-none-any.whl.metadata
+  Using cached blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting click>=8.1.3 (from flask<3.2,>=3.0->-r requirements.txt (line 46))
+  Obtaining dependency information for click>=8.1.3 from https://files.pythonhosted.org/packages/58/50/6c0d534c5f134586a8e1ba4e330569e32f057e33372ae556463212fb4cd3/click-8.5.0-py3-none-any.whl.metadata
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.2.0 (from flask<3.2,>=3.0->-r requirements.txt (line 46))
+  Obtaining dependency information for itsdangerous>=2.2.0 from https://files.pythonhosted.org/packages/04/96/92447566d16df59b2a776c0fb82dbc4d9e07cd95062562af01e408583fc4/itsdangerous-2.2.0-py3-none-any.whl.metadata
+  Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting jinja2>=3.1.2 (from flask<3.2,>=3.0->-r requirements.txt (line 46))
+  Obtaining dependency information for jinja2>=3.1.2 from https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl.metadata
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe>=2.1.1 (from flask<3.2,>=3.0->-r requirements.txt (line 46))
+  Obtaining dependency information for markupsafe>=2.1.1 from https://files.pythonhosted.org/packages/ca/e0/4030bea613677e333c8a2c901fd405055f657f9d06acba5b7357984b6ef7/markupsafe-3.0.4-cp313-cp313-macosx_11_0_arm64.whl.metadata
+  Using cached markupsafe-3.0.4-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.7 kB)
+Collecting werkzeug>=3.1.0 (from flask<3.2,>=3.0->-r requirements.txt (line 46))
+  Obtaining dependency information for werkzeug>=3.1.0 from https://files.pythonhosted.org/packages/a1/38/df03f564f43cec2684823f3cccae1a652ee7face1cbaa76fb223096e64d7/werkzeug-3.1.9-py3-none-any.whl.metadata
+  Using cached werkzeug-3.1.9-py3-none-any.whl.metadata (4.1 kB)
+Requirement already satisfied: packaging in ./.venv/lib/python3.13/site-packages (from gunicorn<24.0,>=23.0->-r requirements.txt (line 51)) (26.3)
+Collecting idna>=2.8 (from anyio<5.0.0,>=4.8.0->google-genai<2.0,>=1.0->-r requirements.txt (line 38))
+  Obtaining dependency information for idna>=2.8 from https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl.metadata
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth<3.0.0,>=2.48.1->google-auth[requests]<3.0.0,>=2.48.1->google-genai<2.0,>=1.0->-r requirements.txt (line 38))
+  Obtaining dependency information for pyasn1-modules>=0.2.1 from https://files.pythonhosted.org/packages/47/8d/d529b5d697919ba8c11ad626e835d4039be708a35b0d22de83a269a6682c/pyasn1_modules-0.4.2-py3-none-any.whl.metadata
+  Using cached pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting cryptography>=38.0.3 (from google-auth<3.0.0,>=2.48.1->google-auth[requests]<3.0.0,>=2.48.1->google-genai<2.0,>=1.0->-r requirements.txt (line 38))
+  Obtaining dependency information for cryptography>=38.0.3 from https://files.pythonhosted.org/packages/e5/56/d194340cc4a57535e82e1bee9e89667ac4b7c13b5d3f59686deae3094dd5/cryptography-50.0.2-cp311-abi3-macosx_11_0_arm64.whl.metadata
+  Using cached cryptography-50.0.2-cp311-abi3-macosx_11_0_arm64.whl.metadata (4.4 kB)
+Collecting certifi (from httpx>=0.27.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for certifi from https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl.metadata
+  Using cached certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx>=0.27.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for httpcore==1.* from https://files.pythonhosted.org/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl.metadata
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx>=0.27.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for h11>=0.16 from https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl.metadata
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=1.9->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for annotated-types>=0.6.0 from https://files.pythonhosted.org/packages/99/91/8acff4f5e50511b911bbccb72b8628a49c68ce14148cd9f6431094859a90/annotated_types-0.8.0-py3-none-any.whl.metadata
+  Using cached annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.50.0 (from pydantic>=1.9->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for pydantic-core==2.50.0 from https://files.pythonhosted.org/packages/c5/41/7f299b2ecf0ddbec8c2a68057ed53d29458ea5b0850615570849c454dd89/pydantic_core-2.50.0-cp313-cp313-macosx_11_0_arm64.whl.metadata
+  Using cached pydantic_core-2.50.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (6.5 kB)
+Collecting typing-inspection>=0.4.4 (from pydantic>=1.9->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for typing-inspection>=0.4.4 from https://files.pythonhosted.org/packages/67/81/4add07e5172b7ac40d8ed5ff580409a7801a4fe26d529bdd915401dabfbe/typing_inspection-0.4.4-py3-none-any.whl.metadata
+  Using cached typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting charset_normalizer<4,>=2 (from requests<3.0,>=2.7->posthog<4.0,>=3.0->-r requirements.txt (line 34))
+  Obtaining dependency information for charset_normalizer<4,>=2 from https://files.pythonhosted.org/packages/91/da/3c5a7798c046df7d2d68ad653cf5b6c5a8bfee225055a843c6f2f42aac1a/charset_normalizer-3.5.2-cp313-cp313-macosx_10_13_universal2.whl.metadata
+  Using cached charset_normalizer-3.5.2-cp313-cp313-macosx_10_13_universal2.whl.metadata (46 kB)
+Collecting urllib3<3,>=1.26 (from requests<3.0,>=2.7->posthog<4.0,>=3.0->-r requirements.txt (line 34))
+  Obtaining dependency information for urllib3<3,>=1.26 from https://files.pythonhosted.org/packages/92/9d/c4e665119135114480843e7ab388fa94d8480650450e6f8e26b70d323a4c/urllib3-2.8.0-py3-none-any.whl.metadata
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting pyproject_hooks (from build>=1.0.3->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for pyproject_hooks from https://files.pythonhosted.org/packages/85/11/044d1ae1b4ec0d7af88ee5bc91e081be1022533032b906a7bdabdbb60977/pyproject_hooks-1.3.3-py3-none-any.whl.metadata
+  Using cached pyproject_hooks-1.3.3-py3-none-any.whl.metadata (1.3 kB)
+Collecting cffi>=2.0.0 (from cryptography>=38.0.3->google-auth<3.0.0,>=2.48.1->google-auth[requests]<3.0.0,>=2.48.1->google-genai<2.0,>=1.0->-r requirements.txt (line 38))
+  Obtaining dependency information for cffi>=2.0.0 from https://files.pythonhosted.org/packages/55/41/4c7042f317b9217502988f0873af87e16ad606dc20f84e546e3e6ce9764c/cffi-2.1.1-cp313-cp313-macosx_11_0_arm64.whl.metadata
+  Using cached cffi-2.1.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.5 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography>=38.0.3->google-auth<3.0.0,>=2.48.1->google-auth[requests]<3.0.0,>=2.48.1->google-genai<2.0,>=1.0->-r requirements.txt (line 38))
+  Obtaining dependency information for pycparser from https://files.pythonhosted.org/packages/90/11/0e6f11117525ff0eec40ebac3d313376f102df93ca44ad9e893ee85e4f89/pycparser-3.11-py3-none-any.whl.metadata
+  Using cached pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+Collecting starlette>=0.46.0 (from fastapi>=0.95.2->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for starlette>=0.46.0 from https://files.pythonhosted.org/packages/4e/d6/1ec1b290f9e0fb067899b61e1d37a30c923068bad260b216dbe37a7d2967/starlette-1.7.0-py3-none-any.whl.metadata
+  Using cached starlette-1.7.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting annotated-doc>=0.0.2 (from fastapi>=0.95.2->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for annotated-doc>=0.0.2 from https://files.pythonhosted.org/packages/3e/30/e900b21425a860e195f32e37657aa1f7c7f2b1bfb26f03ca209b90933c06/annotated_doc-0.0.5-py3-none-any.whl.metadata
+  Using cached annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+Collecting websocket-client!=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0 (from kubernetes>=28.1.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for websocket-client!=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0 from https://files.pythonhosted.org/packages/d5/d2/cc4dc1271e464942db7ee278baae2daa99ee77cb2af744025c04da585a3e/websocket_client-1.9.2-py3-none-any.whl.metadata
+  Using cached websocket_client-1.9.2-py3-none-any.whl.metadata (8.3 kB)
+Collecting requests-oauthlib (from kubernetes>=28.1.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for requests-oauthlib from https://files.pythonhosted.org/packages/3b/5d/63d4ae3b9daea098d5d6f5da83984853c1bbacd5dc826764b249fe119d24/requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata
+  Using cached requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+Collecting durationpy>=0.11 (from kubernetes>=28.1.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for durationpy>=0.11 from https://files.pythonhosted.org/packages/e6/c4/ebdf7837bc4ef6fd98cfb013c28855bb358467bf86c1af011bbc21e21df0/durationpy-0.11-py3-none-any.whl.metadata
+  Using cached durationpy-0.11-py3-none-any.whl.metadata (474 bytes)
+Collecting aiohttp<4.0.0,>=3.14.3 (from kubernetes>=28.1.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for aiohttp<4.0.0,>=3.14.3 from https://files.pythonhosted.org/packages/85/7e/6b9c2e271419d40ca76589613b3c7ab185fd3050a407bd2565b6aa46f695/aiohttp-3.14.4-cp313-cp313-macosx_11_0_arm64.whl.metadata
+  Using cached aiohttp-3.14.4-cp313-cp313-macosx_11_0_arm64.whl.metadata (8.3 kB)
+Collecting aiohttp-retry>=2.9.1 (from kubernetes>=28.1.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for aiohttp-retry>=2.9.1 from https://files.pythonhosted.org/packages/1a/99/84ba7273339d0f3dfa57901b846489d2e5c2cd731470167757f1935fffbd/aiohttp_retry-2.9.1-py3-none-any.whl.metadata
+  Using cached aiohttp_retry-2.9.1-py3-none-any.whl.metadata (8.8 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp<4.0.0,>=3.14.3->kubernetes>=28.1.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for aiohappyeyeballs>=2.5.0 from https://files.pythonhosted.org/packages/71/43/1947f06babed6b3f1d7f38b0c767f52df66bfb2bc10b468c4a7de9eceff2/aiohappyeyeballs-2.7.1-py3-none-any.whl.metadata
+  Using cached aiohappyeyeballs-2.7.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp<4.0.0,>=3.14.3->kubernetes>=28.1.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for aiosignal>=1.4.0 from https://files.pythonhosted.org/packages/fb/76/641ae371508676492379f16e2fa48f4e2c11741bd63c48be4b12a6b09cba/aiosignal-1.4.0-py3-none-any.whl.metadata
+  Using cached aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp<4.0.0,>=3.14.3->kubernetes>=28.1.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for attrs>=17.3.0 from https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl.metadata
+  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp<4.0.0,>=3.14.3->kubernetes>=28.1.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for frozenlist>=1.1.1 from https://files.pythonhosted.org/packages/0c/ab/6e5080ee374f875296c4243c381bbdef97a9ac39c6e3ce1d5f7d42cb78d6/frozenlist-1.8.0-cp313-cp313-macosx_11_0_arm64.whl.metadata
+  Using cached frozenlist-1.8.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (20 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp<4.0.0,>=3.14.3->kubernetes>=28.1.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for multidict<7.0,>=4.5 from https://files.pythonhosted.org/packages/46/46/9b4c1127cece0289fb207d04aae5116382ddfcb2a4dc8e0cb49a33f3c7b3/multidict-6.9.1-cp313-cp313-macosx_11_0_arm64.whl.metadata
+  Using cached multidict-6.9.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (5.3 kB)
+Collecting propcache>=0.2.0 (from aiohttp<4.0.0,>=3.14.3->kubernetes>=28.1.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for propcache>=0.2.0 from https://files.pythonhosted.org/packages/25/7d/c1ab1ef09e9d4d835be5d58c0a32a1e1de8397abaa4e502a9d4141328cad/propcache-0.5.4-cp313-cp313-macosx_11_0_arm64.whl.metadata
+  Using cached propcache-0.5.4-cp313-cp313-macosx_11_0_arm64.whl.metadata (25 kB)
+Collecting yarl<2.0,>=1.25.1 (from aiohttp<4.0.0,>=3.14.3->kubernetes>=28.1.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for yarl<2.0,>=1.25.1 from https://files.pythonhosted.org/packages/a8/aa/50acc5c3e5da04172ae3c281c75405af4d2ca911e16120ab0563f4dffb66/yarl-1.25.1-cp313-cp313-macosx_11_0_arm64.whl.metadata
+  Using cached yarl-1.25.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (111 kB)
+Collecting flatbuffers (from onnxruntime>=1.14.1->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for flatbuffers from https://files.pythonhosted.org/packages/e8/2d/d2a548598be01649e2d46231d151a6c56d10b964d94043a335ae56ea2d92/flatbuffers-25.12.19-py2.py3-none-any.whl.metadata
+  Using cached flatbuffers-25.12.19-py2.py3-none-any.whl.metadata (1.0 kB)
+Collecting protobuf>=4.25.8 (from onnxruntime>=1.14.1->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for protobuf>=4.25.8 from https://files.pythonhosted.org/packages/32/72/98342feb672507c8f3a69e34b4fa8961f608edba5c1a48a6f47156d92cb5/protobuf-7.36.2-cp310-abi3-macosx_10_9_universal2.whl.metadata
+  Using cached protobuf-7.36.2-cp310-abi3-macosx_10_9_universal2.whl.metadata (595 bytes)
+Collecting googleapis-common-protos~=1.57 (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for googleapis-common-protos~=1.57 from https://files.pythonhosted.org/packages/65/b9/6b29500a1c581ff4d77fd83c6568d068bee06f1b139fb6eb0a4f2d4bce8a/googleapis_common_protos-1.75.5-py3-none-any.whl.metadata
+  Using cached googleapis_common_protos-1.75.5-py3-none-any.whl.metadata (8.5 kB)
+Collecting opentelemetry-exporter-otlp-common==0.66b1 (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for opentelemetry-exporter-otlp-common==0.66b1 from https://files.pythonhosted.org/packages/fc/39/8c23d67665c762aa51840fa06f86e902e8f6f1693bc8d7e3d98cd6e2f753/opentelemetry_exporter_otlp_common-0.66b1-py3-none-any.whl.metadata
+  Using cached opentelemetry_exporter_otlp_common-0.66b1-py3-none-any.whl.metadata (1.9 kB)
+Collecting opentelemetry-exporter-otlp-proto-common==1.45.1 (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for opentelemetry-exporter-otlp-proto-common==1.45.1 from https://files.pythonhosted.org/packages/84/aa/92f225d353904e7f70b8b3e3c1b02db0cf56f744c2e83c581dc372e78873/opentelemetry_exporter_otlp_proto_common-1.45.1-py3-none-any.whl.metadata
+  Using cached opentelemetry_exporter_otlp_proto_common-1.45.1-py3-none-any.whl.metadata (1.8 kB)
+Collecting opentelemetry-proto==1.45.1 (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for opentelemetry-proto==1.45.1 from https://files.pythonhosted.org/packages/ab/9a/42ec8180a769516ae757e893b69736826efceac7332553915b4528a91c6d/opentelemetry_proto-1.45.1-py3-none-any.whl.metadata
+  Using cached opentelemetry_proto-1.45.1-py3-none-any.whl.metadata (2.3 kB)
+Collecting opentelemetry-semantic-conventions==0.66b1 (from opentelemetry-sdk>=1.2.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for opentelemetry-semantic-conventions==0.66b1 from https://files.pythonhosted.org/packages/bc/14/67f8aa798857f8cf686f515bf93d9bb877ce952ddc8efae0fa25b45ce0d6/opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl.metadata
+  Using cached opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl.metadata (2.4 kB)
+Collecting opentelemetry-instrumentation-asgi==0.66b1 (from opentelemetry-instrumentation-fastapi>=0.41b0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for opentelemetry-instrumentation-asgi==0.66b1 from https://files.pythonhosted.org/packages/67/ea/10ba99110bf3c9fb736af39c96ca8f3668b988cabb6b59309e058c44461c/opentelemetry_instrumentation_asgi-0.66b1-py3-none-any.whl.metadata
+  Using cached opentelemetry_instrumentation_asgi-0.66b1-py3-none-any.whl.metadata (2.0 kB)
+Collecting opentelemetry-instrumentation==0.66b1 (from opentelemetry-instrumentation-fastapi>=0.41b0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for opentelemetry-instrumentation==0.66b1 from https://files.pythonhosted.org/packages/da/b2/d1413681ff43e13ac9860df27e1226d3199ab0b97b352ceea41abcc660a5/opentelemetry_instrumentation-0.66b1-py3-none-any.whl.metadata
+  Using cached opentelemetry_instrumentation-0.66b1-py3-none-any.whl.metadata (7.2 kB)
+Collecting opentelemetry-util-http==0.66b1 (from opentelemetry-instrumentation-fastapi>=0.41b0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for opentelemetry-util-http==0.66b1 from https://files.pythonhosted.org/packages/eb/9b/c77ecaea79ba0de1a11e7f06a7f5eea7043ec23f1860dcf5f03536698e4c/opentelemetry_util_http-0.66b1-py3-none-any.whl.metadata
+  Using cached opentelemetry_util_http-0.66b1-py3-none-any.whl.metadata (2.6 kB)
+Collecting wrapt<3.0.0,>=1.0.0 (from opentelemetry-instrumentation==0.66b1->opentelemetry-instrumentation-fastapi>=0.41b0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for wrapt<3.0.0,>=1.0.0 from https://files.pythonhosted.org/packages/4a/13/5d15ef0e2f42d5f084930dc4863e6e52c160c28301c8780aae170c58421c/wrapt-2.5.0-cp313-cp313-macosx_11_0_arm64.whl.metadata
+  Using cached wrapt-2.5.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (7.6 kB)
+Collecting asgiref~=3.0 (from opentelemetry-instrumentation-asgi==0.66b1->opentelemetry-instrumentation-fastapi>=0.41b0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for asgiref~=3.0 from https://files.pythonhosted.org/packages/c0/1b/54f4ad77cd8a584fa70746c47df988e002cf1ee1eba43364d46f87803647/asgiref-3.12.1-py3-none-any.whl.metadata
+  Using cached asgiref-3.12.1-py3-none-any.whl.metadata (9.4 kB)
+Collecting pyasn1<0.7.0,>=0.6.1 (from pyasn1-modules>=0.2.1->google-auth<3.0.0,>=2.48.1->google-auth[requests]<3.0.0,>=2.48.1->google-genai<2.0,>=1.0->-r requirements.txt (line 38))
+  Obtaining dependency information for pyasn1<0.7.0,>=0.6.1 from https://files.pythonhosted.org/packages/9a/3b/6163796d69c3977d1e4287bea4a6979161cbbdd170ebb430511e8e1999ce/pyasn1-0.6.4-py3-none-any.whl.metadata
+  Using cached pyasn1-0.6.4-py3-none-any.whl.metadata (8.4 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.11.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for markdown-it-py>=2.2.0 from https://files.pythonhosted.org/packages/b3/81/4da04ced5a082363ecfa159c010d200ecbd959ae410c10c0264a38cac0f5/markdown_it_py-4.2.0-py3-none-any.whl.metadata
+  Using cached markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.11.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for pygments<3.0.0,>=2.13.0 from https://files.pythonhosted.org/packages/71/46/17f022dd3e953bf20a04a028a21ec746d942f8d2af30fa0f124fa0e6a684/pygments-2.21.0-py3-none-any.whl.metadata
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.11.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for mdurl~=0.1 from https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl.metadata
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting huggingface-hub<3.0,>=0.16.4 (from tokenizers>=0.13.2->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for huggingface-hub<3.0,>=0.16.4 from https://files.pythonhosted.org/packages/eb/b0/0f7b430fd100b3a3b037fdbb314878200241082e607b3383c63d91a13a72/huggingface_hub-2.2.0-py3-none-any.whl.metadata
+  Using cached huggingface_hub-2.2.0-py3-none-any.whl.metadata (16 kB)
+Collecting filelock>=3.10.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers>=0.13.2->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for filelock>=3.10.0 from https://files.pythonhosted.org/packages/ee/86/032133892a5de43b5a98200b01aadcad68cc255e274a762f08b8a76d2912/filelock-4.1.0-py3-none-any.whl.metadata
+  Using cached filelock-4.1.0-py3-none-any.whl.metadata (2.0 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers>=0.13.2->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for fsspec>=2023.5.0 from https://files.pythonhosted.org/packages/6c/c0/a98505f18594f1bce828bb159cec0fcf9860562f1a2c85913409fc8f3d9e/fsspec-2026.9.0-py3-none-any.whl.metadata
+  Using cached fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting hf-xet<2.0.0,>=1.6.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers>=0.13.2->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for hf-xet<2.0.0,>=1.6.0 from https://files.pythonhosted.org/packages/c3/47/a26ebdce7056a61e931f228439bc0ab08cbec239d1690f965e5e637cba79/hf_xet-1.7.0-cp38-abi3-macosx_11_0_arm64.whl.metadata
+  Using cached hf_xet-1.7.0-cp38-abi3-macosx_11_0_arm64.whl.metadata (4.9 kB)
+  Link requires a different Python (3.13.16 not in: '>=3.14'): https://files.pythonhosted.org/packages/ce/dc/40ffaafdf37b39340638544ee8a2e350455ea02c156aa1619d5864e27287/httpx2-0.0.0-py3-none-any.whl (from https://pypi.org/simple/httpx2/) (requires-python:>=3.14)
+  Link requires a different Python (3.13.16 not in: '>=3.14'): https://files.pythonhosted.org/packages/82/b5/9b932b5ce50177baf052bc006259b88ee0cb312aa02f8bbabd790fc0bb4c/httpx2-0.0.0.tar.gz (from https://pypi.org/simple/httpx2/) (requires-python:>=3.14)
+Collecting httpx2<3,>=2.0.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers>=0.13.2->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for httpx2<3,>=2.0.0 from https://files.pythonhosted.org/packages/d8/9c/6fe8931fd9f381042a9e4c7d5a7b4cbf7016b252bec0c99a49fce42c3326/httpx2-2.13.1-py3-none-any.whl.metadata
+  Using cached httpx2-2.13.1-py3-none-any.whl.metadata (9.8 kB)
+  Link requires a different Python (3.13.16 not in: '>=3.14'): https://files.pythonhosted.org/packages/79/40/0f06088ac6f598713f2f80de5495be78349d742c93d3811207da9069f3f6/httpcore2-0.0.0-py3-none-any.whl (from https://pypi.org/simple/httpcore2/) (requires-python:>=3.14)
+  Link requires a different Python (3.13.16 not in: '>=3.14'): https://files.pythonhosted.org/packages/42/14/3afda397c436e70ed989f40ee6bf1ed453756f9f7611aaed77b167dadf09/httpcore2-0.0.0.tar.gz (from https://pypi.org/simple/httpcore2/) (requires-python:>=3.14)
+Collecting httpcore2==2.13.1 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers>=0.13.2->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for httpcore2==2.13.1 from https://files.pythonhosted.org/packages/09/ba/a4568248771ce81957bfb7cc600264a40fbcda092391ee1c415c50be4bea/httpcore2-2.13.1-py3-none-any.whl.metadata
+  Using cached httpcore2-2.13.1-py3-none-any.whl.metadata (26 kB)
+Collecting truststore>=0.10 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers>=0.13.2->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for truststore>=0.10 from https://files.pythonhosted.org/packages/19/97/56608b2249fe206a67cd573bc93cd9896e1efb9e98bce9c163bcdc704b88/truststore-0.10.4-py3-none-any.whl.metadata
+  Using cached truststore-0.10.4-py3-none-any.whl.metadata (4.4 kB)
+Collecting shellingham>=1.3.0 (from typer>=0.9.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for shellingham>=1.3.0 from https://files.pythonhosted.org/packages/e0/f9/0595336914c5619e5f28a1fb793285925a8cd4b432c9da0a987836c7f822/shellingham-1.5.4-py2.py3-none-any.whl.metadata
+  Using cached shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting httptools>=0.8.0 (from uvicorn[standard]>=0.18.3->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for httptools>=0.8.0 from https://files.pythonhosted.org/packages/9c/04/223994f8589750d2a36ceb43203e739cf75bd9e12c226680d73567766908/httptools-0.9.0-cp313-cp313-macosx_11_0_arm64.whl.metadata
+  Using cached httptools-0.9.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (3.5 kB)
+Collecting uvloop>=0.15.1 (from uvicorn[standard]>=0.18.3->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for uvloop>=0.15.1 from https://files.pythonhosted.org/packages/5f/83/eb980d64e6dd5da46d4dc35755fa6afd6b5b47141437cf89615f1117c5a6/uvloop-0.23.0-cp313-cp313-macosx_10_13_universal2.whl.metadata
+  Using cached uvloop-0.23.0-cp313-cp313-macosx_10_13_universal2.whl.metadata (5.1 kB)
+Collecting watchfiles>=0.20 (from uvicorn[standard]>=0.18.3->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for watchfiles>=0.20 from https://files.pythonhosted.org/packages/c7/8a/894799b485fe9473ad10422a0d9668e53fb78e3a2b5cc6061159572844ad/watchfiles-1.3.0-cp310-abi3-macosx_11_0_arm64.whl.metadata
+  Using cached watchfiles-1.3.0-cp310-abi3-macosx_11_0_arm64.whl.metadata (4.9 kB)
+Collecting oauthlib>=3.0.0 (from requests-oauthlib->kubernetes>=28.1.0->chromadb<0.7,>=0.6->-r requirements.txt (line 25))
+  Obtaining dependency information for oauthlib>=3.0.0 from https://files.pythonhosted.org/packages/d9/f4/78229a1066068ca14fc60fb26cf7381cabe4382261392b90e5f9552722d4/oauthlib-4.0.0-py3-none-any.whl.metadata
+  Using cached oauthlib-4.0.0-py3-none-any.whl.metadata (8.6 kB)
+Using cached python_dotenv-1.1.1-py3-none-any.whl (20 kB)
+Using cached chromadb-0.6.3-py3-none-any.whl (611 kB)
+Using cached posthog-3.25.0-py2.py3-none-any.whl (89 kB)
+Using cached google_genai-1.75.0-py3-none-any.whl (793 kB)
+Using cached rank_bm25-0.2.2-py3-none-any.whl (8.6 kB)
+Using cached flask-3.1.3-py3-none-any.whl (103 kB)
+Using cached gunicorn-23.0.0-py3-none-any.whl (85 kB)
+Using cached anyio-4.15.1-py3-none-any.whl (132 kB)
+Using cached distro-1.9.0-py3-none-any.whl (20 kB)
+Using cached google_auth-2.61.0-py3-none-any.whl (268 kB)
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Using cached pydantic-2.14.0-py3-none-any.whl (487 kB)
+Using cached pydantic_core-2.50.0-cp313-cp313-macosx_11_0_arm64.whl (2.0 MB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached charset_normalizer-3.5.2-cp313-cp313-macosx_10_13_universal2.whl (366 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Using cached tenacity-9.1.4-py3-none-any.whl (28 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached websockets-16.1.1-cp313-cp313-macosx_11_0_arm64.whl (177 kB)
+Using cached annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Using cached backoff-2.2.1-py3-none-any.whl (15 kB)
+Using cached bcrypt-5.0.0-cp39-abi3-macosx_10_12_universal2.whl (495 kB)
+Using cached blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Using cached build-1.6.1-py3-none-any.whl (31 kB)
+Using cached certifi-2026.7.22-py3-none-any.whl (136 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Using cached cryptography-50.0.2-cp311-abi3-macosx_11_0_arm64.whl (3.9 MB)
+Using cached cffi-2.1.1-cp313-cp313-macosx_11_0_arm64.whl (184 kB)
+Using cached fastapi-0.143.0-py3-none-any.whl (144 kB)
+Using cached annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Using cached grpcio-1.84.0-cp313-cp313-macosx_11_0_universal2.whl (12.3 MB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached kubernetes-37.0.1-py2.py3-none-any.whl (7.5 MB)
+Using cached aiohttp-3.14.4-cp313-cp313-macosx_11_0_arm64.whl (545 kB)
+Using cached multidict-6.9.1-cp313-cp313-macosx_11_0_arm64.whl (57 kB)
+Using cached yarl-1.25.1-cp313-cp313-macosx_11_0_arm64.whl (103 kB)
+Using cached aiohappyeyeballs-2.7.1-py3-none-any.whl (15 kB)
+Using cached aiohttp_retry-2.9.1-py3-none-any.whl (10.0 kB)
+Using cached aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Using cached attrs-26.1.0-py3-none-any.whl (67 kB)
+Using cached durationpy-0.11-py3-none-any.whl (4.1 kB)
+Using cached frozenlist-1.8.0-cp313-cp313-macosx_11_0_arm64.whl (49 kB)
+Using cached markupsafe-3.0.4-cp313-cp313-macosx_11_0_arm64.whl (12 kB)
+Using cached mmh3-5.3.1-cp313-cp313-macosx_11_0_arm64.whl (39 kB)
+Using cached monotonic-1.6-py2.py3-none-any.whl (8.2 kB)
+Using cached numpy-2.5.3-cp313-cp313-macosx_14_0_arm64.whl (5.4 MB)
+Using cached onnxruntime-1.31.0-cp313-cp313-macosx_14_0_arm64.whl (20.9 MB)
+Using cached opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+Using cached opentelemetry_exporter_otlp_proto_grpc-1.45.1-py3-none-any.whl (19 kB)
+Using cached opentelemetry_exporter_otlp_common-0.66b1-py3-none-any.whl (12 kB)
+Using cached opentelemetry_exporter_otlp_proto_common-1.45.1-py3-none-any.whl (15 kB)
+Using cached opentelemetry_proto-1.45.1-py3-none-any.whl (72 kB)
+Using cached googleapis_common_protos-1.75.5-py3-none-any.whl (307 kB)
+Using cached opentelemetry_sdk-1.45.1-py3-none-any.whl (140 kB)
+Using cached opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl (206 kB)
+Using cached protobuf-7.36.2-cp310-abi3-macosx_10_9_universal2.whl (456 kB)
+Using cached opentelemetry_instrumentation_fastapi-0.66b1-py3-none-any.whl (14 kB)
+Using cached opentelemetry_instrumentation-0.66b1-py3-none-any.whl (36 kB)
+Using cached opentelemetry_instrumentation_asgi-0.66b1-py3-none-any.whl (15 kB)
+Using cached opentelemetry_util_http-0.66b1-py3-none-any.whl (8.4 kB)
+Using cached asgiref-3.12.1-py3-none-any.whl (25 kB)
+Using cached wrapt-2.5.0-cp313-cp313-macosx_11_0_arm64.whl (105 kB)
+Using cached orjson-3.13.0-cp313-cp313-macosx_15_0_arm64.whl (123 kB)
+Using cached overrides-7.7.0-py3-none-any.whl (17 kB)
+Using cached propcache-0.5.4-cp313-cp313-macosx_11_0_arm64.whl (51 kB)
+Using cached pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+Using cached pyasn1-0.6.4-py3-none-any.whl (84 kB)
+Using cached pypika-0.51.1-py2.py3-none-any.whl (60 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pyyaml-6.0.3-cp313-cp313-macosx_11_0_arm64.whl (173 kB)
+Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached starlette-1.7.0-py3-none-any.whl (78 kB)
+Using cached tokenizers-0.23.3-cp310-abi3-macosx_11_0_arm64.whl (3.1 MB)
+Using cached huggingface_hub-2.2.0-py3-none-any.whl (839 kB)
+Using cached hf_xet-1.7.0-cp38-abi3-macosx_11_0_arm64.whl (3.6 MB)
+Using cached httpx2-2.13.1-py3-none-any.whl (95 kB)
+Using cached httpcore2-2.13.1-py3-none-any.whl (83 kB)
+Using cached filelock-4.1.0-py3-none-any.whl (133 kB)
+Using cached fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Using cached tqdm-4.70.1-py3-none-any.whl (80 kB)
+Using cached truststore-0.10.4-py3-none-any.whl (18 kB)
+Using cached typer-0.27.3-py3-none-any.whl (123 kB)
+Using cached shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Using cached typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Using cached uvicorn-0.54.0-py3-none-any.whl (87 kB)
+Using cached httptools-0.9.0-cp313-cp313-macosx_11_0_arm64.whl (117 kB)
+Using cached uvloop-0.23.0-cp313-cp313-macosx_10_13_universal2.whl (1.4 MB)
+Using cached watchfiles-1.3.0-cp310-abi3-macosx_11_0_arm64.whl (397 kB)
+Using cached websocket_client-1.9.2-py3-none-any.whl (95 kB)
+Using cached werkzeug-3.1.9-py3-none-any.whl (228 kB)
+Using cached flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+Using cached importlib_resources-7.1.0-py3-none-any.whl (37 kB)
+Using cached pycparser-3.11-py3-none-any.whl (51 kB)
+Using cached pyproject_hooks-1.3.3-py3-none-any.whl (10 kB)
+Using cached requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+Using cached oauthlib-4.0.0-py3-none-any.whl (159 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Building wheels for collected packages: chroma-hnswlib
+  Building wheel for chroma-hnswlib (pyproject.toml): started
+  Running command Building wheel for chroma-hnswlib (pyproject.toml)
+  running bdist_wheel
+  running build
+  running build_ext
+  clang++ -fno-strict-overflow -Wsign-compare -Wunreachable-code -fno-common -dynamic -DNDEBUG -g -O3 -Wall -I/Users/jawadbhullar/Documents/codepath/ai201/ai201-coursework/.venv/include -I/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/include/python3.13 -c /var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/tmpqbz9h3ry.cpp -o var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/tmpqbz9h3ry.o -std=c++14
+  clang++ -fno-strict-overflow -Wsign-compare -Wunreachable-code -fno-common -dynamic -DNDEBUG -g -O3 -Wall -I/Users/jawadbhullar/Documents/codepath/ai201/ai201-coursework/.venv/include -I/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/include/python3.13 -c /var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/tmpqmcho00x.cpp -o var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/tmpqmcho00x.o -fvisibility=hidden
+  building 'hnswlib' extension
+  clang++ -fno-strict-overflow -Wsign-compare -Wunreachable-code -fno-common -dynamic -DNDEBUG -g -O3 -Wall -I/private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-build-env-zh18ddr2/overlay/lib/python3.13/site-packages/pybind11/include -I/private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-build-env-zh18ddr2/overlay/lib/python3.13/site-packages/numpy/_core/include -I./hnswlib/ -I/Users/jawadbhullar/Documents/codepath/ai201/ai201-coursework/.venv/include -I/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/include/python3.13 -c ./python_bindings/bindings.cpp -o build/temp.macosx-26.0-arm64-cpython-313/python_bindings/bindings.o -O3 -stdlib=libc++ -mmacosx-version-min=10.7 -DVERSION_INFO=\"0.7.6\" -std=c++14 -fvisibility=hidden
+  ./python_bindings/bindings.cpp:1:10: fatal error: 'iostream' file not found
+      1 | #include <iostream>
+        |          ^~~~~~~~~~
+  1 error generated.
+  error: Command '['clang++', '-fno-strict-overflow', '-Wsign-compare', '-Wunreachable-code', '-fno-common', '-dynamic', '-DNDEBUG', '-g', '-O3', '-Wall', '-I/private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-build-env-zh18ddr2/overlay/lib/python3.13/site-packages/pybind11/include', '-I/private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-build-env-zh18ddr2/overlay/lib/python3.13/site-packages/numpy/_core/include', '-I./hnswlib/', '-I/Users/jawadbhullar/Documents/codepath/ai201/ai201-coursework/.venv/include', '-I/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/include/python3.13', '-c', './python_bindings/bindings.cpp', '-o', 'build/temp.macosx-26.0-arm64-cpython-313/python_bindings/bindings.o', '-O3', '-stdlib=libc++', '-mmacosx-version-min=10.7', '-DVERSION_INFO="0.7.6"', '-std=c++14', '-fvisibility=hidden']' returned non-zero exit status 1.
+  error: subprocess-exited-with-error
+  
+  × Building wheel for chroma-hnswlib (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> No available output.
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  full command: /Users/jawadbhullar/Documents/codepath/ai201/ai201-coursework/.venv/bin/python /Users/jawadbhullar/Documents/codepath/ai201/ai201-coursework/.venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py build_wheel /var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/tmpvlm6p3db
+  cwd: /private/var/folders/p5/0pxv6cy55t5g1vyx90gyc0680000gn/T/pip-install-zpggltld/chroma-hnswlib_0cbff109b14f4b4a95839c0444f9413f
+  Building wheel for chroma-hnswlib (pyproject.toml): finished with status 'error'
+  ERROR: Failed building wheel for chroma-hnswlib
+Failed to build chroma-hnswlib
+error: failed-wheel-build-for-install
+
+× Failed to build installable wheels for some pyproject.toml based projects
+╰─> chroma-hnswlib
