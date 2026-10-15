@@ -21,13 +21,11 @@ Jawad Bhullar & Corpus: city_guides
 
 ## What This Does
 
-I picked the corpus city_guides. The system answers questions such as "What are
-reccomendations on places to eat?". 
-<!-- Three or four sentences. Which corpus you picked, and the kinds of
-     questions your system answers. Write it for someone who has never seen
-     this repo.
-
-     Milestone 5. -->
+I picked the corpus city_guides. This corpus purpose is to answer questions 
+related to vacation spots in certain areas. These questions are based on reviews
+and other comments left by people who have vistied the area. The system answers 
+questions such as "What are reccomendations on places to eat?", "What form of 
+transportation is available to reach [destination]?".  
 
 ## Chunking Strategy
 
@@ -54,15 +52,6 @@ Both true. I keep a cheap bike for September to November and walk the rest of th
 
 --- reply 4 (5 votes) ---
 If you do get one, the campus does free registration and it's the only reason I got mine back after it was taken.
-
-<!-- Five chunks, pasted as text. Label each one and name the file it came from
-     AND the function that produced it — the grader checks your code against
-     what you claim here.
-
-     `python app.py chunks -n 5` prints all three for you. Copy them straight
-     across.
-
-     Milestone 3. -->
 
 **Chunk 1** — source: `` — produced by: ``
 
@@ -123,50 +112,58 @@ cards only.
 
 ## Sample Answer
 
-<!-- One complete question and answer, pasted as text, with the source line
-     visible. Milestone 4. -->
+**Question:** 
 
-**Question:**
+How many buses a day run from Brightwater to Givens Mill on weekdays?
 
 **Answer:**
 
-```
-```
+Four buses a day run from Brightwater to Givens Mill on weekdays. 
+
+Source: guide_givens_mill.md
+
+Sources retrieved: guide_brightwater.md, guide_givens_mill.md, guide_kestrelford.md, guide_regional_transport.md
 
 **My relevance cutoff:**
 
-<!-- The number you set in config.py, and how you got there.
+I left the number at 0.6 as the thresehold because based on the results I
+got from the questions I asked they seemed to fit in the range. On one of
+the questions I asked that was supposed to be in corpus I get a best distance
+of 0.502 which is towards the higher end. If I made the thresehold smaller
+a question like that would not be answered. On average the gap was around
+a .5 difference between questions that were in corpus and those that weren't.
 
-     You ran five questions your corpus covers and the five in OUT_OF_SCOPE
-     that it clearly doesn't, and wrote down the best distance for each. What
-     did those two groups look like? Where was the gap? Put the actual numbers
-     here — the table below wants all ten rows.
-
-     Milestone 4. -->
-
-| Question | In corpus? | Best distance |
-| -------- | ---------- | ------------- |
-|          |            |               |
+| Question                                                              | In corpus? | Best distance |
+| --------------------------------------------------------------------- | ---------- | ------------- |
+| How many buses a day run from Brightwater to Givens Mill on weekdays? | Yes        | 0.317         |
+| "Where is parking free for two hours anywhere in town?"               | Yes        | 0.502         |
+| "Which months are recommended to visit Corry Vale?"                   | Yes        | 0.353         |
+| "How often does the Marchwood tram network run on weekdays?"          | Yes        | 0.202         |
+| "Where is the nearest full hospital to Halden Bay?"                   | Yes        | 0.336         |
+| "What is the capital of Mongolia?"                                    | No         | 0.754         |
+| "How do I change the oil in a diesel engine?"                         | No         | 0.888         |
+| "Who won the 1994 World Cup?"                                         | No         | 0.899         |
+| "What is the recommended dosage of ibuprofen for a headache?"         | No         | 0.835         |
+| "How do I write a for loop in Rust?"                                  | No         | 0.836         |
 
 ## How I Used AI
 
-<!-- Two specific moments. For each: what you asked for, what came back, and
-     what you changed about it.
-
-     "I asked Claude to write the chunking function from my notes. It ignored
-     the overlap, so I added that myself" is the level of detail we're after.
-     "I used AI to help me code" is not.
-
-     Milestone 5. -->
-
 **1.**
+
+Once I looked through corpora files for city guides I saw that most of 
+documents were seperated by headers. I used that information and prompted 
+chatgpt to write the code for the chunking function that would serparte it 
+based on the headers. The function worked well so I didn't have to change 
+anything.
 
 **2.**
 
-<!-- ── Stretch features ─────────────────────────────────────────────────────
-     Doing one? Say so here BEFORE you start. A feature this README never
-     claims earns nothing.
-     ───────────────────────────────────────────────────────────────────────── -->
+Another moment I asked AI was to help me create a question that
+would produce a best distance close to the thresehold. Originally the 
+questions I came up with were either well within the thresehold or too 
+far away. I asked chatgpt and it gave me the question "Where is parking 
+free for two hours anywhere in town?". I used that and it gave me a best 
+distance value of .5 which was close to what I was looking for. 
 
 ---
 
